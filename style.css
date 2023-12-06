@@ -988,7 +988,7 @@ footer {
 	background-color: #fefaf0;
 	position: relative;
 }
-.logo-transparent{
+.logo-transparent {
 	position: absolute;
 	top: 0;
 	left: 11px;
@@ -997,6 +997,7 @@ footer {
 .contacts-page-main-cont {
 	height: 100vh;
 	background-color: #fefaf0;
+	margin-bottom: 156px;
 }
 .contacts-page-main-cont .contact-form-block {
 	position: relative;
@@ -1080,23 +1081,53 @@ footer {
 .contacts-page-main-map-block-address-items span:first-child {
 	margin-bottom: 24px;
 }
-.contacts-page-main-wrap .header-menu .header-menu-list{
+.contacts-page-main-wrap .header-menu .header-menu-list {
 	margin-right: 21.72%;
 }
 .contacts-page-main-wrap .header-menu .header-menu-list ul li a,
 .contacts-page-main-wrap .header-menu .header-menu-right ul li a {
 	color: #000;
 }
-.contacts-page-main-wrap .header-menu{
-	background-color: #FEFAF0;
+.contacts-page-main-wrap .header-menu {
+	background-color: #fefaf0;
 	padding-top: 24px;
-    padding-right: 40px;
-		margin: 0;
+	padding-right: 40px;
+	margin: 0;
 }
-.language-picker-contact-page #language-picker-select{
+.language-picker-contact-page #language-picker-select {
 	color: #000;
 }
 /* Contacts page end */
+
+/* Plannig page start */
+.planning-page-main-block-body{
+	padding-left: 40px;
+	padding-bottom: 160px;
+	background-color: #FEFAF0;
+}
+.planning-page-main-block-body-text p {
+	color: var(--2F2F2F, #2f2f2f);
+	font-family: Helvetica Neue;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px; /* 133.333% */
+	letter-spacing: -0.18px;
+	margin-bottom: 32px;
+	max-width: 860px;
+}
+.planning-page-main-block-body-img {
+	max-width: 860px;
+	margin-bottom: 64px;
+}
+.planning-page-main-block-body-img-tripple{
+	display: flex;
+	column-gap: 20px;
+}
+.planning-page-main-block-body-img-tripple img{
+	width: 31.33%;
+}
+/* Plannig page end */
 /* 1200 */
 @media (max-width: 75em) {
 	.footer-inner .footer-inner-menu {
