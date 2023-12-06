@@ -997,7 +997,7 @@ footer {
 .contacts-page-main-cont {
 	height: 100vh;
 	background-color: #fefaf0;
-	margin-bottom: 156px;
+	padding-bottom: 156px;
 }
 .contacts-page-main-cont .contact-form-block {
 	position: relative;
