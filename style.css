@@ -586,7 +586,7 @@ p {
 .header-menu {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	/* align-items: center; */
 	justify-content: flex-end;
 	margin-top: 24px;
 	margin-right: 40px;
@@ -1088,6 +1088,10 @@ footer {
 .contacts-page-main-wrap .header-menu .header-menu-right ul li a {
 	color: #000;
 }
+.planning-page-main-wrap .header-menu .header-menu-list ul li a,
+.planning-page-main-wrap .header-menu .header-menu-right ul li a {
+	color: #000;
+}
 .contacts-page-main-wrap .header-menu {
 	background-color: #fefaf0;
 	padding-top: 24px;
@@ -1126,6 +1130,145 @@ footer {
 }
 .planning-page-main-block-body-img-tripple img{
 	width: 31.33%;
+}
+.planning-page-main-block-top-left{
+	padding-bottom: 87px;
+}
+.planning-page-main-block-top-left-top{
+	display: flex;
+	column-gap: 20px;
+	background-color: #FEFAF0;
+	margin-top: 27px;
+	margin-bottom: 48px;
+}
+.planning-page-main-block-top{
+	border-top: 1px solid rgba(47, 47, 47, 0.10);
+	border-bottom: 1px solid rgba(47, 47, 47, 0.10);
+	margin: 0 40px;
+	margin-bottom: 64px;
+}
+.planning-page-main-block-top-left-top a{
+	color: var(--2F2F2F, #2F2F2F);
+	text-align: center;
+	font-family: Helvetica Neue;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px; /* 125% */
+	text-decoration: none;
+	padding: 8px 16px;
+	border: 1px solid rgba(47, 47, 47, 0.20);
+	width: 178px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.planning-page-main-block-top-left-top a:hover{
+	background: var(--D0B16F, #D0B16F);
+	color: #fff;
+	border: 1px solid #fff;
+}
+.planning-page-main-block-top-left-top-img img{
+	max-width: 566px;
+	width: 100%;
+}
+.planning-page-main-block-top-right{
+	border-left: 1px solid rgba(47, 47, 47, 0.10);
+	padding-left: 21px;
+}
+.planning-page-main-block-top-right-wrap-btn{
+	margin-bottom: 80px;
+}
+.planning-page-main-block-top-right-wrap-btn a{
+	color: var(--2F2F2F, #2F2F2F);
+	text-align: center;
+	font-family: Helvetica Neue;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px; /* 125% */
+	padding: 18px 16px;
+	width: 440px;
+	height: 56px;
+	text-decoration: none;
+	border: 1px solid var(--2F2F2F, #2F2F2F);
+	display: inline-block;
+	box-sizing: border-box;
+}
+.planning-page-main-block-top-right-wrap-btn a:hover{
+	background: var(--D0B16F, #D0B16F);
+	color: #fff;
+	border: 1px solid #fff;
+}
+.planning-page-main-block-top-right-wrap-desc-item{
+	width: 440px;
+	padding: 16px 0;
+	border-bottom: 1px solid rgba(47, 47, 47, 0.20);
+	display: flex;
+    column-gap: 20px;
+		position: relative;
+}
+.planning-page-main-block-top-right-wrap-desc-item span{
+	color: rgba(47, 47, 47, 0.50);
+	font-family: Helvetica Neue;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px; /* 125% */
+	letter-spacing: -0.16px;
+	width: 160px;
+}
+
+.planning-page-main-block-top-right-wrap-desc-item p{
+	overflow: hidden;
+	color: var(--2F2F2F, #2F2F2F);
+	text-overflow: ellipsis;
+	font-family: Helvetica Neue;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px; /* 125% */
+	letter-spacing: -0.16px;
+}
+.planning-page-main-block-top-wrap{
+	display: flex;
+	justify-content: space-between;
+}
+.planning-page-main-block-top-right-wrap{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+		height: 100%;
+}
+.accordion-wrap{
+	max-width: 220px;
+}
+.accordion-arr{
+	background-image: url(images/icons/arrtop.svg);
+	background-repeat: no-repeat;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	right: 0;
+}
+.accordion-wrap .accordion{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.accordion-wrap .accordion.active .accordion-arr{
+	background-image: url(images/icons/arrbottom.svg);
+}
+
+.planning-page-main-block-slider .page-9-custom-slider{
+	flex-direction: column;
+}
+.planning-page-main-block-slider .page-9-custom-slider .page-9-custom-slider-small{
+	flex-direction: row;
+	margin-left: 0;
+	column-gap: 20px;
 }
 /* Plannig page end */
 /* 1200 */

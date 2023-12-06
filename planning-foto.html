@@ -52,7 +52,37 @@
 									<a href="#">Фото</a>
 								</div>
 								<div class="planning-page-main-block-top-left-top-img">
-									<img src="images/flat001.png" alt="" />
+
+
+									<div class="planning-page-main-block-slider">
+									<div class="page-9-custom-slider" style="flex-direction: column;">
+										<div class="page-9-custom-slider-main">
+											<div id="main_image"></div>
+										</div>
+										<div class="page-9-custom-slider-small" style="flex-direction: row;">
+											<div class="page-9-custom-slider-small-items active-img">
+												<a href="" data-image="images/slider001.png"><img src="images/slider111.png" alt=""></a>
+											</div>
+											<div class="page-9-custom-slider-small-items">
+												<a href="" data-image="images/slider222.png"><img src="images/slider111.png" alt=""></a>
+											</div>
+											<div class="page-9-custom-slider-small-items">
+												<a href="" data-image="images/slider001.png"><img src="images/slider111.png" alt=""></a>
+											</div>
+											<div class="page-9-custom-slider-small-items">
+												<a href="" data-image="images/slider222.png"><img src="images/slider111.png" alt=""></a>
+											</div>
+											<div class="page-9-custom-slider-small-items">
+												<a href="" data-image="images/slider001.png"><img src="images/slider111.png" alt=""></a>
+											</div>
+											<div class="page-9-custom-slider-small-items">
+												<a href="" data-image="images/slider222.png"><img src="images/slider111.png" alt=""></a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
 								</div>
 							</div>
 							<div class="planning-page-main-block-top-right">
@@ -229,5 +259,37 @@
 				});
 			}
 		</script>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		var menuItems = document.querySelectorAll('.page-9-custom-slider-small-items a');
+		var phoneImage = document.getElementById('main_image');
+		menuItems.forEach(function (menuItem) {
+			menuItem.addEventListener('click', function (event) {
+				event.preventDefault();
+				var imageUrl = menuItem.getAttribute('data-image');
+				phoneImage.style.backgroundImage = 'url(' + imageUrl + ')';
+			});
+		});
+	});
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var sliderItems = document.querySelectorAll('.page-9-custom-slider-small-items');
+
+    sliderItems.forEach(function (item, index) {
+      item.addEventListener('click', function () {
+        // Удаляем класс active-img у всех элементов
+        sliderItems.forEach(function (el) {
+          el.classList.remove('active-img');
+        });
+
+        // Добавляем класс active-img текущему элементу
+        item.classList.add('active-img');
+      });
+    });
+  });
+</script>
 	</body>
 </html>
