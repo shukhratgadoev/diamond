@@ -1323,6 +1323,107 @@ swiper-container::part(pagination) {
   display: none;
 }
 /* photo-gallery end */
+
+
+
+/* choosing-apartment start */
+.choosing-apartment-title{
+	margin-bottom: 128px;
+}
+.choosing-apartment-title h2{
+	color: var(--2F2F2F, #2F2F2F);
+	text-align: center;
+	font-family: Panama Demo;
+	font-size: 64px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 70px; /* 109.375% */
+	letter-spacing: -1.28px;
+	text-transform: uppercase;
+}
+.choosing-apartment-response-body{
+	margin: 0 40px;
+}
+/* table start*/
+.choosing-apartment-page-main-block{
+	padding-bottom: 160px;
+}
+table {
+  border-collapse: collapse;
+	border-spacing: 0 16px;
+  width: 100%;
+}
+
+th, td {
+  padding: 16px 10px;
+  text-align: left;
+	border-top: 1px solid rgba(47, 47, 47, 0.20);
+	border-bottom: 1px solid rgba(47, 47, 47, 0.20);
+}
+
+td img{
+	width: 100%;
+	max-width: 96px;
+	height: 80px;
+}
+
+table th:first-child{
+	width: 230px;
+}
+table th:nth-child(2){
+	width: 115px;
+}
+table th:nth-child(3),
+table th:nth-child(4),
+table th:nth-child(5),
+table th:nth-child(6){
+	width: 258px;
+}
+
+
+table th{
+	color: rgba(47, 47, 47, 0.50);
+	font-family: Helvetica Neue;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 18px; /* 128.571% */
+}
+
+table tr td{
+	color: var(--2F2F2F, #2F2F2F);
+	font-family: Helvetica Neue;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px; /* 125% */
+	letter-spacing: -0.16px;
+}
+.more-appartment{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+		padding: 16px 0;
+		border-bottom: 1px solid rgba(47, 47, 47, 0.20);
+}
+.more-appartment a{
+	color: var(--2F2F2F, #2F2F2F);
+	text-align: center;
+	font-family: Helvetica Neue;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px; /* 125% */
+	letter-spacing: -0.16px;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
+.more-appartment a img{
+	margin-left: 4px;
+}
+/* table end*/
+/* choosing-apartment end */
 /* 1200 */
 @media (max-width: 75em) {
 	.footer-inner .footer-inner-menu {
