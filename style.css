@@ -1422,6 +1422,231 @@ table tr td{
 .more-appartment a img{
 	margin-left: 4px;
 }
+.choosing-apartment-body-filter{
+	margin: 0 24px 64px 24px;
+}
+.choosing-apartment-body-filter-item-top{
+	margin-bottom: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.filter-item-bedrooms-title{
+	margin-bottom: 8px;
+}
+.filter-item-bedrooms-title span{
+	color: var(--2F2F2F, #2F2F2F);
+	font-family: Helvetica Neue;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 18px; /* 128.571% */
+}
+.choosing-apartment-body-filter-item-inner{
+	display: flex;
+	position: relative;
+	border: 1px solid rgba(47, 47, 47, 0.20);
+	padding: 14px 0;
+}
+.choosing-apartment-body-filter-item-inner .item-inner{
+	position: relative;
+}
+.choosing-apartment-body-filter-item-inner .item-inner label{
+	position: absolute;
+
+	left: 16px;
+}
+.choosing-apartment-body-filter-item-inner .item-inner input{
+	height: 20px;
+	box-sizing: border-box;
+	background-color: transparent;
+	padding-left: 41px;
+	box-sizing: border-box;
+	width: 100%;
+	border: none;
+	outline: none;
+	position: relative;
+}
+.choosing-apartment-body-filter-item-inner .item-inner:first-child input{
+	border-right: 1px solid rgba(47, 47, 47, 0.20);
+}
+.choosing-apartment-body-filter-item{
+	max-width: 325px;
+	padding: 14px 16px;
+}
+.choosing-apartment-body-filter-item-top span:first-child{
+	color: var(--2F2F2F, #2F2F2F);
+	font-family: Helvetica Neue;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 18px; /* 128.571% */
+}
+.choosing-apartment-body-filter-item-top span:nth-child(2){
+	color: rgba(47, 47, 47, 0.50);
+	text-align: right;
+	font-family: Helvetica Neue;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 18px; /* 128.571% */
+}
+.filter-item-bedrooms{
+	display: flex;
+	column-gap: 6px;
+	box-sizing: border-box;
+}
+
+.filter-item-bedrooms-inner{
+	color: var(--2F2F2F, #2F2F2F);
+	text-align: center;
+	font-family: Helvetica Neue;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px; /* 125% */
+	padding: 8px;
+	border: 1px solid rgba(47, 47, 47, 0.20);
+	width: 60px;
+	height: 48px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+ .filter-item-top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 26px;
+}
+
+.filter-item-bottom-item-title span{
+
+}
+
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #FEFAF0;
+	color: var(--2F2F2F, #2F2F2F);
+font-family: Helvetica Neue;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 125% */
+letter-spacing: -0.16px;
+border: 1px solid rgba(47, 47, 47, 0.20);
+padding: 14px 16px;
+max-width: 325px;
+height: 48px;
+box-sizing: border-box;
+cursor: pointer;
+}
+.filter-item-bottom{
+	margin: 0 16px;
+}
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div {
+	background-color: #FEFAF0;
+	color: var(--2F2F2F, #2F2F2F);
+font-family: Helvetica Neue;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 125% */
+letter-spacing: -0.16px;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover {
+  background: var(--D0B16F, #D0B16F);
+	color: #fff;
+}
+.filter-item-bottom-item-body{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 18px;
+	margin-left: 20px;
+}
+.filter-item-bottom-item-second{
+	width: 100%;
+}
+.filter-item-bottom-item-body span a img{
+	margin-left: 3px;
+}
+.filter-item-bottom-item-body span a{
+	text-decoration: none;
+	color: var(--2F2F2F, #2F2F2F);
+	font-family: Helvetica Neue;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px; /* 125% */
+	letter-spacing: -0.16px;
+	display: flex;
+	align-items: center;
+}
+.filter-item-bottom-item-body span{
+	color: var(--2F2F2F, #2F2F2F);
+	font-family: Helvetica Neue;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px; /* 125% */
+	letter-spacing: -0.16px;
+}
+.filter-item-bottom{
+	display: flex;
+	align-items: center;
+}
 /* table end*/
 /* choosing-apartment end */
 /* 1200 */

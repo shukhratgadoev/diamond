@@ -7,6 +7,12 @@
 		<title>Выбрать резиденцию</title>
 	</head>
 	<body style="background-color: #fefaf0">
+		<style>
+			.active {
+				background-color: var(--D0B16F, #d0b16f);
+				color: #fff;
+			}
+		</style>
 		<div class="planning-page-main">
 			<div class="planning-page-main-wrap">
 				<img
@@ -48,11 +54,138 @@
 							<h2>Выбор квартиры</h2>
 						</div>
 
-
 						<div class="choosing-apartment-body">
 							<div class="choosing-apartment-body-wrap">
-								
+								<div class="choosing-apartment-body-filter">
+									<form action="">
+										<div class="filter-item-top">
+											<div class="choosing-apartment-body-filter-item">
+												<div class="choosing-apartment-body-filter-item-top">
+													<span>Этаж</span>
+													<span>12 этажей</span>
+												</div>
+												<div class="choosing-apartment-body-filter-item-inner">
+													<div class="item-inner">
+														<label for="">от</label>
+														<input type="text" />
+													</div>
+													<div class="item-inner">
+														<label for="">до</label>
+														<input type="text" />
+													</div>
+												</div>
+											</div>
+	
+											<div class="choosing-apartment-body-filter-item">
+												<div class="filter-item-bedrooms-title">
+													<span>Спальни</span>
+												</div>
+												<div class="filter-item-bedrooms">
+													<div
+														id="bedroom1"
+														class="filter-item-bedrooms-inner"
+														onclick="changeClass(this)"
+													>
+														1
+													</div>
+													<div
+														id="bedroom2"
+														class="filter-item-bedrooms-inner"
+														onclick="changeClass(this)"
+													>
+														2
+													</div>
+													<div
+														id="bedroom3"
+														class="filter-item-bedrooms-inner"
+														onclick="changeClass(this)"
+													>
+														3
+													</div>
+													<div
+														id="bedroom4"
+														class="filter-item-bedrooms-inner"
+														onclick="changeClass(this)"
+													>
+														4
+													</div>
+													<div
+														id="bedroom5"
+														class="filter-item-bedrooms-inner"
+														onclick="changeClass(this)"
+													>
+														5+
+													</div>
+												</div>
+											</div>
+											<div class="choosing-apartment-body-filter-item">
+												<div class="choosing-apartment-body-filter-item-top">
+													<span>Площадь</span>
+													<span>м<sup><small>2</small></sup></span>
+												</div>
+												<div class="choosing-apartment-body-filter-item-inner">
+													<div class="item-inner">
+														<label for="">от</label>
+														<input type="text" />
+													</div>
+													<div class="item-inner">
+														<label for="">до</label>
+														<input type="text" />
+													</div>
+												</div>
+											</div>
+											<div class="choosing-apartment-body-filter-item">
+												<div class="choosing-apartment-body-filter-item-top">
+													<span>Цена</span>
+													<span>млн сум</span>
+												</div>
+												<div class="choosing-apartment-body-filter-item-inner">
+													<div class="item-inner">
+														<label for="">от</label>
+														<input type="text" />
+													</div>
+													<div class="item-inner">
+														<label for="">до</label>
+														<input type="text" />
+													</div>
+												</div>
+											</div>
+	
+										</div>
+										<div class="filter-item-bottom">
+											<div class="filter-item-bottom-item">
+												<div class="filter-item-bottom-item-title">
+													<span>Особенности</span>
+												</div>
+												<div class="custom-select" style="width:200px;">
+													<select>
+														<option value="0">Все</option>
+														<option value="1">Audi</option>
+														<option value="2">BMW</option>
+														<option value="3">Citroen</option>
+														<option value="4">Ford</option>
+														<option value="5">Honda</option>
+														<option value="6">Jaguar</option>
+														<option value="7">Land Rover</option>
+														<option value="8">Mercedes</option>
+														<option value="9">Mini</option>
+														<option value="10">Nissan</option>
+														<option value="11">Toyota</option>
+														<option value="12">Volvo</option>
+													</select>
+												</div>
+											</div>
+											<div class="filter-item-bottom-item-second">
+												<div class="filter-item-bottom-item-body">
+													<span><a href="#"> Сбросить фильтр <img src="images/icons/ic-x.svg" alt=""></a></span>
+													<span>Найдено планировок: 64</span>
+												</div>
+											</div>
+										</div>
+										
 
+									</form>
+								</div>
 
 								<div class="choosing-apartment-response-body">
 									<table>
@@ -65,56 +198,59 @@
 											<th>Цена</th>
 										</tr>
 										<tr>
-											<td><img src="images/small001.png" alt=""></td>
+											<td><img src="images/small001.png" alt="" /></td>
 											<td>Кв. 1</td>
 											<td>1</td>
 											<td>2</td>
-											<td>56,6 м2</td>
+											<td>56,6 м<sup><small>2</small></sup></td>
 											<td>160 млн сум</td>
 										</tr>
 										<tr>
-											<td><img src="images/small001.png" alt=""></td>
+											<td><img src="images/small001.png" alt="" /></td>
 											<td>Кв. 1</td>
 											<td>1</td>
 											<td>2</td>
-											<td>56,6 м2</td>
+											<td>56,6 м<sup><small>2</small></sup></td>
 											<td>160 млн сум</td>
 										</tr>
 										<tr>
-											<td><img src="images/small001.png" alt=""></td>
+											<td><img src="images/small001.png" alt="" /></td>
 											<td>Кв. 1</td>
 											<td>1</td>
 											<td>2</td>
-											<td>56,6 м2</td>
+											<td>56,6 м<sup><small>2</small></sup></td>
 											<td>160 млн сум</td>
 										</tr>
 										<tr>
-											<td><img src="images/small001.png" alt=""></td>
+											<td><img src="images/small001.png" alt="" /></td>
 											<td>Кв. 1</td>
 											<td>1</td>
 											<td>2</td>
-											<td>56,6 м2</td>
+											<td>56,6 м<sup><small>2</small></sup></td>
 											<td>160 млн сум</td>
 										</tr>
 										<tr>
-											<td><img src="images/small001.png" alt=""></td>
+											<td><img src="images/small001.png" alt="" /></td>
 											<td>Кв. 1</td>
 											<td>1</td>
 											<td>2</td>
-											<td>56,6 м2</td>
+											<td>56,6 м<sup><small>2</small></sup></td>
 											<td>160 млн сум</td>
 										</tr>
 										<tr>
-											<td><img src="images/small001.png" alt=""></td>
+											<td><img src="images/small001.png" alt="" /></td>
 											<td>Кв. 1</td>
 											<td>1</td>
 											<td>2</td>
-											<td>56,6 м2</td>
+											<td>56,6 м<sup><small>2</small></sup></td>
 											<td>160 млн сум</td>
 										</tr>
 									</table>
 									<div class="more-appartment">
-										<a href="#">Показать еще 15 квартир <img src="images/icons/arrbottom.svg" alt=""></a>
+										<a href="#"
+											>Показать еще 15 квартир
+											<img src="images/icons/arrbottom.svg" alt=""
+										/></a>
 									</div>
 								</div>
 							</div>
@@ -171,20 +307,96 @@
 		</footer>
 
 		<script>
-			var acc = document.getElementsByClassName('accordion');
-			var i;
-
-			for (i = 0; i < acc.length; i++) {
-				acc[i].addEventListener('click', function () {
-					this.classList.toggle('active');
-					var panel = this.nextElementSibling;
-					if (panel.style.display === 'block') {
-						panel.style.display = 'none';
-					} else {
-						panel.style.display = 'block';
-					}
+			function changeClass(element) {
+				// Удаляем класс "active" у всех элементов
+				var elements = document.querySelectorAll('.filter-item-bedrooms-inner');
+				elements.forEach(function (el) {
+					el.classList.remove('active');
 				});
+
+				// Добавляем класс "active" к выбранному элементу
+				element.classList.add('active');
 			}
 		</script>
+		<script>
+			var x, i, j, l, ll, selElmnt, a, b, c;
+			/*look for any elements with the class "custom-select":*/
+			x = document.getElementsByClassName("custom-select");
+			l = x.length;
+			for (i = 0; i < l; i++) {
+				selElmnt = x[i].getElementsByTagName("select")[0];
+				ll = selElmnt.length;
+				/*for each element, create a new DIV that will act as the selected item:*/
+				a = document.createElement("DIV");
+				a.setAttribute("class", "select-selected");
+				a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+				x[i].appendChild(a);
+				/*for each element, create a new DIV that will contain the option list:*/
+				b = document.createElement("DIV");
+				b.setAttribute("class", "select-items select-hide");
+				for (j = 1; j < ll; j++) {
+					/*for each option in the original select element,
+					create a new DIV that will act as an option item:*/
+					c = document.createElement("DIV");
+					c.innerHTML = selElmnt.options[j].innerHTML;
+					c.addEventListener("click", function(e) {
+							/*when an item is clicked, update the original select box,
+							and the selected item:*/
+							var y, i, k, s, h, sl, yl;
+							s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+							sl = s.length;
+							h = this.parentNode.previousSibling;
+							for (i = 0; i < sl; i++) {
+								if (s.options[i].innerHTML == this.innerHTML) {
+									s.selectedIndex = i;
+									h.innerHTML = this.innerHTML;
+									y = this.parentNode.getElementsByClassName("same-as-selected");
+									yl = y.length;
+									for (k = 0; k < yl; k++) {
+										y[k].removeAttribute("class");
+									}
+									this.setAttribute("class", "same-as-selected");
+									break;
+								}
+							}
+							h.click();
+					});
+					b.appendChild(c);
+				}
+				x[i].appendChild(b);
+				a.addEventListener("click", function(e) {
+						/*when the select box is clicked, close any other select boxes,
+						and open/close the current select box:*/
+						e.stopPropagation();
+						closeAllSelect(this);
+						this.nextSibling.classList.toggle("select-hide");
+						this.classList.toggle("select-arrow-active");
+					});
+			}
+			function closeAllSelect(elmnt) {
+				/*a function that will close all select boxes in the document,
+				except the current select box:*/
+				var x, y, i, xl, yl, arrNo = [];
+				x = document.getElementsByClassName("select-items");
+				y = document.getElementsByClassName("select-selected");
+				xl = x.length;
+				yl = y.length;
+				for (i = 0; i < yl; i++) {
+					if (elmnt == y[i]) {
+						arrNo.push(i)
+					} else {
+						y[i].classList.remove("select-arrow-active");
+					}
+				}
+				for (i = 0; i < xl; i++) {
+					if (arrNo.indexOf(i)) {
+						x[i].classList.add("select-hide");
+					}
+				}
+			}
+			/*if the user clicks anywhere outside the select box,
+			then close all select boxes:*/
+			document.addEventListener("click", closeAllSelect);
+			</script>
 	</body>
 </html>
