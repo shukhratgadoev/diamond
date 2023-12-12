@@ -4,9 +4,31 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
-
+		<style>
+			.swiper {
+				width: 100%;
+				height: 100%;
+			}
+	
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: #fff;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+	
+			.swiper-slide img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		</style>
 		<title>Document</title>
 	</head>
 	<body>
@@ -220,7 +242,47 @@
 
 		<section class="page page-8">
 			<img class="logo" src="images/Logo.svg" alt="logo" />
-			page 8
+		
+			<div class="page-8-wrapper">
+				<div class="page-8-wrapper-top">
+					<h3>Резиденции, <br> 
+						готовы к заселению </h3>
+						<h4>Скачайте PDF-презентацию 
+							Тихая гавань в 1 клик</h4>
+							<a href="#">Скачать PDF <img src="images/download.png" alt=""></a>
+				</div>
+
+				<div class="page-8-wrapper-slider">
+					  <!-- Swiper -->
+
+						<div class="swiper mySwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img src="images/page8002.png" alt=""></div>
+								<div class="swiper-slide"><img src="images/page8001.png" alt=""></div>
+								<div class="swiper-slide"><img src="images/page8002.png" alt=""></div>
+								<div class="swiper-slide"><img src="images/page8001.png" alt=""></div>
+								
+							</div>
+
+
+							<div class="cover-arr">
+								<div class="arrow-left arrow"><img src="images/icons/arrlightslid.svg" alt=""></div>
+								<div class="swiper-pagination"></div>
+								<div class="arrow-right arrow"><img src="images/icons/arrrightslid.svg" alt=""></div>
+							</div>
+							
+
+							
+						</div>
+ 
+				</div>
+
+			</div>
+
+
+
+
+
 		</section>
 		<section class="page page-9">
 			<img class="logo" src="images/Logo.svg" alt="logo" />
@@ -515,5 +577,24 @@
     });
   });
 </script>
+
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+	 var swiper = new Swiper(".mySwiper", {
+	  slidesPerView: 2,
+      spaceBetween: 20,
+		 pagination: {
+			 el: ".swiper-pagination",
+			 type: "fraction",
+		 },
+		 navigation: {
+			 nextEl: ".arrow-right",
+			 prevEl: ".arrow-left",
+		 },
+	 });
+ </script>
 	</body>
 </html>
