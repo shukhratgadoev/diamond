@@ -4,11 +4,51 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="response.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 		<title>Фотогалерея</title>
 	</head>
 	<body style="background-color: #fefaf0">
 		<div class="planning-page-main">
 			<div class="planning-page-main-wrap">
+
+				<nav role="navigation" class="navigation-mobile">
+					<div id="menuToggle">
+						<input type="checkbox" />
+						<span></span>
+						<span></span>
+						<span></span>
+						<ul id="menu">
+							<li><a href="#">О проекте</a></li>
+							<li><a href="/planning.html">Выбрать резиденцию</a></li>
+							<li><a href="/photo-gallery.html">Фотогалерея</a></li>
+							<li><a href="/contacts.html">Контакты</a></li>
+
+								<li><a href="#">Оставить заявку</a></li>
+								<li>
+								<form class="language-picker language-picker-contact-page">
+									<select
+										name="language-picker-select"
+										id="language-picker-select"
+									>
+										<option value="eng" selected>Eng</option>
+										<option value="russ">Ру</option>
+										<option value="uzb">Uzb</option>
+									</select>
+								</form>
+							</li>
+						</ul>
+					</div>
+					<div class="mobile-logo">
+						<img
+							class="logo-transparent-mobile"
+							src="images/icons/Logo-transparent.svg"
+							alt=""
+						/>
+					</div>
+				</nav>
+
+
 				<img
 					class="logo-transparent"
 					src="images/icons/Logo-transparent.svg"
@@ -47,170 +87,122 @@
 						<div class="photo-gallery-page-main-block-title">
 							<h2>Фотогалерея</h2>
 						</div>
+
 						<div class="photo-gallery-page-main-block-slider">
+
 							<div class="photo-gallery-page-main-block-slider-top">
 								<span>Фасады</span>
 								<span class="slide-count">14 Фото</span>
 							</div>
+
+
 							<div class="photo-gallery-page-main-block-slider-line">
-								<swiper-container
-									class="mySwiper"
-									pagination="true"
-									pagination-clickable="true"
-									slides-per-view="4"
-									space-between="30"
-									centered-slides="false"
-								>
-									<swiper-slide
-										><img src="images/slide001.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide002.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide003.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide004.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide001.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide002.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide003.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide004.png" alt=""
-									/></swiper-slide>
-								</swiper-container>
+
+
+								<div class="swiper mySwiper">
+									<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="images/slide001.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide002.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide003.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide004.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide001.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide002.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide003.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide004.png" alt=""/></div>
+									</div>
+								</div>
+							
+
 							</div>
+							
 						</div>
 						<div class="photo-gallery-page-main-block-slider">
+
 							<div class="photo-gallery-page-main-block-slider-top">
 								<span>Фасады</span>
 								<span class="slide-count">14 Фото</span>
 							</div>
+
+
 							<div class="photo-gallery-page-main-block-slider-line">
-								<swiper-container
-									class="mySwiper"
-									pagination="true"
-									pagination-clickable="true"
-									slides-per-view="4"
-									space-between="30"
-									centered-slides="false"
-								>
-									<swiper-slide
-										><img src="images/slide001.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide002.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide003.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide004.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide001.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide002.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide003.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide004.png" alt=""
-									/></swiper-slide>
-								</swiper-container>
+
+
+								<div class="swiper mySwiper">
+									<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="images/slide001.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide002.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide003.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide004.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide001.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide002.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide003.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide004.png" alt=""/></div>
+									</div>
+								</div>
+							
+
 							</div>
+							
 						</div>
 						<div class="photo-gallery-page-main-block-slider">
+
 							<div class="photo-gallery-page-main-block-slider-top">
 								<span>Фасады</span>
 								<span class="slide-count">14 Фото</span>
 							</div>
+
+
 							<div class="photo-gallery-page-main-block-slider-line">
-								<swiper-container
-									class="mySwiper"
-									pagination="true"
-									pagination-clickable="true"
-									slides-per-view="4"
-									space-between="30"
-									centered-slides="false"
-								>
-									<swiper-slide
-										><img src="images/slide001.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide002.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide003.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide004.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide001.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide002.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide003.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide004.png" alt=""
-									/></swiper-slide>
-								</swiper-container>
+
+
+								<div class="swiper mySwiper">
+									<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="images/slide001.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide002.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide003.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide004.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide001.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide002.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide003.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide004.png" alt=""/></div>
+									</div>
+								</div>
+							
+
 							</div>
+							
 						</div>
 						<div class="photo-gallery-page-main-block-slider">
+
 							<div class="photo-gallery-page-main-block-slider-top">
 								<span>Фасады</span>
 								<span class="slide-count">14 Фото</span>
 							</div>
+
+
 							<div class="photo-gallery-page-main-block-slider-line">
-								<swiper-container
-									class="mySwiper"
-									pagination="true"
-									pagination-clickable="true"
-									slides-per-view="4"
-									space-between="30"
-									centered-slides="fasle"
-								>
-									<swiper-slide
-										><img src="images/slide001.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide002.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide003.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide004.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide001.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide002.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide003.png" alt=""
-									/></swiper-slide>
-									<swiper-slide
-										><img src="images/slide004.png" alt=""
-									/></swiper-slide>
-								</swiper-container>
+
+
+								<div class="swiper mySwiper">
+									<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="images/slide001.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide002.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide003.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide004.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide001.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide002.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide003.png" alt=""/></div>
+											<div class="swiper-slide"><img src="images/slide004.png" alt=""/></div>
+									</div>
+								</div>
+							
+
 							</div>
+							
 						</div>
+
+
+
 					</div>
 				</div>
 			</div>
@@ -261,23 +253,30 @@
 				</div>
 			</div>
 		</footer>
-		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-		<script>
-			var acc = document.getElementsByClassName('accordion');
-			var i;
+		 <!-- Swiper JS -->
+		 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-			for (i = 0; i < acc.length; i++) {
-				acc[i].addEventListener('click', function () {
-					this.classList.toggle('active');
-					var panel = this.nextElementSibling;
-					if (panel.style.display === 'block') {
-						panel.style.display = 'none';
-					} else {
-						panel.style.display = 'block';
-					}
-				});
-			}
-		</script>
+		 <!-- Initialize Swiper -->
+		 <script>
+			 var swiper = new Swiper(".mySwiper", {
+				 slidesPerView: 1,
+				 spaceBetween: 20,
+				 breakpoints: {
+					 640: {
+						 slidesPerView: 1,
+						 spaceBetween: 20,
+					 },
+					 768: {
+						 slidesPerView: 2,
+						 spaceBetween: 20,
+					 },
+					 1024: {
+						 slidesPerView: 4,
+						 spaceBetween: 20,
+					 },
+				 },
+			 });
+		 </script>
 
 	</body>
 </html>

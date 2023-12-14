@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="response.css" />
 		<title>Выбрать резиденцию</title>
 	</head>
 	<body style="background-color: #fefaf0">
@@ -15,6 +16,42 @@
 		</style>
 		<div class="planning-page-main">
 			<div class="planning-page-main-wrap">
+				<nav role="navigation" class="navigation-mobile">
+					<div id="menuToggle">
+						<input type="checkbox" />
+						<span></span>
+						<span></span>
+						<span></span>
+						<ul id="menu">
+							<li><a href="#">О проекте</a></li>
+							<li><a href="/planning.html">Выбрать резиденцию</a></li>
+							<li><a href="/photo-gallery.html">Фотогалерея</a></li>
+							<li><a href="/contacts.html">Контакты</a></li>
+
+								<li><a href="#">Оставить заявку</a></li>
+								<li>
+								<form class="language-picker language-picker-contact-page">
+									<select
+										name="language-picker-select"
+										id="language-picker-select"
+									>
+										<option value="eng" selected>Eng</option>
+										<option value="russ">Ру</option>
+										<option value="uzb">Uzb</option>
+									</select>
+								</form>
+							</li>
+						</ul>
+					</div>
+					<div class="mobile-logo">
+						<img
+							class="logo-transparent-mobile"
+							src="images/icons/Logo-transparent.svg"
+							alt=""
+						/>
+					</div>
+				</nav>
+
 				<img
 					class="logo-transparent"
 					src="images/icons/Logo-transparent.svg"
@@ -75,7 +112,7 @@
 													</div>
 												</div>
 											</div>
-	
+
 											<div class="choosing-apartment-body-filter-item">
 												<div class="filter-item-bedrooms-title">
 													<span>Спальни</span>
@@ -121,7 +158,9 @@
 											<div class="choosing-apartment-body-filter-item">
 												<div class="choosing-apartment-body-filter-item-top">
 													<span>Площадь</span>
-													<span>м<sup><small>2</small></sup></span>
+													<span
+														>м<sup><small>2</small></sup></span
+													>
 												</div>
 												<div class="choosing-apartment-body-filter-item-inner">
 													<div class="item-inner">
@@ -150,14 +189,13 @@
 													</div>
 												</div>
 											</div>
-	
 										</div>
 										<div class="filter-item-bottom">
 											<div class="filter-item-bottom-item">
 												<div class="filter-item-bottom-item-title">
 													<span>Особенности</span>
 												</div>
-												<div class="custom-select" style="width:200px;">
+												<div class="custom-select" style="width: 200px">
 													<select>
 														<option value="0">Все</option>
 														<option value="1">Audi</option>
@@ -177,13 +215,15 @@
 											</div>
 											<div class="filter-item-bottom-item-second">
 												<div class="filter-item-bottom-item-body">
-													<span><a href="#"> Сбросить фильтр <img src="images/icons/ic-x.svg" alt=""></a></span>
+													<span
+														><a href="#">
+															Сбросить фильтр
+															<img src="images/icons/ic-x.svg" alt="" /></a
+													></span>
 													<span>Найдено планировок: 64</span>
 												</div>
 											</div>
 										</div>
-										
-
 									</form>
 								</div>
 
@@ -202,7 +242,9 @@
 											<td>Кв. 1</td>
 											<td>1</td>
 											<td>2</td>
-											<td>56,6 м<sup><small>2</small></sup></td>
+											<td>
+												56,6 м<sup><small>2</small></sup>
+											</td>
 											<td>160 млн сум</td>
 										</tr>
 										<tr>
@@ -210,7 +252,9 @@
 											<td>Кв. 1</td>
 											<td>1</td>
 											<td>2</td>
-											<td>56,6 м<sup><small>2</small></sup></td>
+											<td>
+												56,6 м<sup><small>2</small></sup>
+											</td>
 											<td>160 млн сум</td>
 										</tr>
 										<tr>
@@ -218,7 +262,9 @@
 											<td>Кв. 1</td>
 											<td>1</td>
 											<td>2</td>
-											<td>56,6 м<sup><small>2</small></sup></td>
+											<td>
+												56,6 м<sup><small>2</small></sup>
+											</td>
 											<td>160 млн сум</td>
 										</tr>
 										<tr>
@@ -226,7 +272,9 @@
 											<td>Кв. 1</td>
 											<td>1</td>
 											<td>2</td>
-											<td>56,6 м<sup><small>2</small></sup></td>
+											<td>
+												56,6 м<sup><small>2</small></sup>
+											</td>
 											<td>160 млн сум</td>
 										</tr>
 										<tr>
@@ -234,7 +282,9 @@
 											<td>Кв. 1</td>
 											<td>1</td>
 											<td>2</td>
-											<td>56,6 м<sup><small>2</small></sup></td>
+											<td>
+												56,6 м<sup><small>2</small></sup>
+											</td>
 											<td>160 млн сум</td>
 										</tr>
 										<tr>
@@ -242,7 +292,9 @@
 											<td>Кв. 1</td>
 											<td>1</td>
 											<td>2</td>
-											<td>56,6 м<sup><small>2</small></sup></td>
+											<td>
+												56,6 м<sup><small>2</small></sup>
+											</td>
 											<td>160 млн сум</td>
 										</tr>
 									</table>
@@ -321,82 +373,87 @@
 		<script>
 			var x, i, j, l, ll, selElmnt, a, b, c;
 			/*look for any elements with the class "custom-select":*/
-			x = document.getElementsByClassName("custom-select");
+			x = document.getElementsByClassName('custom-select');
 			l = x.length;
 			for (i = 0; i < l; i++) {
-				selElmnt = x[i].getElementsByTagName("select")[0];
+				selElmnt = x[i].getElementsByTagName('select')[0];
 				ll = selElmnt.length;
 				/*for each element, create a new DIV that will act as the selected item:*/
-				a = document.createElement("DIV");
-				a.setAttribute("class", "select-selected");
+				a = document.createElement('DIV');
+				a.setAttribute('class', 'select-selected');
 				a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
 				x[i].appendChild(a);
 				/*for each element, create a new DIV that will contain the option list:*/
-				b = document.createElement("DIV");
-				b.setAttribute("class", "select-items select-hide");
+				b = document.createElement('DIV');
+				b.setAttribute('class', 'select-items select-hide');
 				for (j = 1; j < ll; j++) {
 					/*for each option in the original select element,
 					create a new DIV that will act as an option item:*/
-					c = document.createElement("DIV");
+					c = document.createElement('DIV');
 					c.innerHTML = selElmnt.options[j].innerHTML;
-					c.addEventListener("click", function(e) {
-							/*when an item is clicked, update the original select box,
+					c.addEventListener('click', function (e) {
+						/*when an item is clicked, update the original select box,
 							and the selected item:*/
-							var y, i, k, s, h, sl, yl;
-							s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-							sl = s.length;
-							h = this.parentNode.previousSibling;
-							for (i = 0; i < sl; i++) {
-								if (s.options[i].innerHTML == this.innerHTML) {
-									s.selectedIndex = i;
-									h.innerHTML = this.innerHTML;
-									y = this.parentNode.getElementsByClassName("same-as-selected");
-									yl = y.length;
-									for (k = 0; k < yl; k++) {
-										y[k].removeAttribute("class");
-									}
-									this.setAttribute("class", "same-as-selected");
-									break;
+						var y, i, k, s, h, sl, yl;
+						s = this.parentNode.parentNode.getElementsByTagName('select')[0];
+						sl = s.length;
+						h = this.parentNode.previousSibling;
+						for (i = 0; i < sl; i++) {
+							if (s.options[i].innerHTML == this.innerHTML) {
+								s.selectedIndex = i;
+								h.innerHTML = this.innerHTML;
+								y = this.parentNode.getElementsByClassName('same-as-selected');
+								yl = y.length;
+								for (k = 0; k < yl; k++) {
+									y[k].removeAttribute('class');
 								}
+								this.setAttribute('class', 'same-as-selected');
+								break;
 							}
-							h.click();
+						}
+						h.click();
 					});
 					b.appendChild(c);
 				}
 				x[i].appendChild(b);
-				a.addEventListener("click", function(e) {
-						/*when the select box is clicked, close any other select boxes,
+				a.addEventListener('click', function (e) {
+					/*when the select box is clicked, close any other select boxes,
 						and open/close the current select box:*/
-						e.stopPropagation();
-						closeAllSelect(this);
-						this.nextSibling.classList.toggle("select-hide");
-						this.classList.toggle("select-arrow-active");
-					});
+					e.stopPropagation();
+					closeAllSelect(this);
+					this.nextSibling.classList.toggle('select-hide');
+					this.classList.toggle('select-arrow-active');
+				});
 			}
 			function closeAllSelect(elmnt) {
 				/*a function that will close all select boxes in the document,
 				except the current select box:*/
-				var x, y, i, xl, yl, arrNo = [];
-				x = document.getElementsByClassName("select-items");
-				y = document.getElementsByClassName("select-selected");
+				var x,
+					y,
+					i,
+					xl,
+					yl,
+					arrNo = [];
+				x = document.getElementsByClassName('select-items');
+				y = document.getElementsByClassName('select-selected');
 				xl = x.length;
 				yl = y.length;
 				for (i = 0; i < yl; i++) {
 					if (elmnt == y[i]) {
-						arrNo.push(i)
+						arrNo.push(i);
 					} else {
-						y[i].classList.remove("select-arrow-active");
+						y[i].classList.remove('select-arrow-active');
 					}
 				}
 				for (i = 0; i < xl; i++) {
 					if (arrNo.indexOf(i)) {
-						x[i].classList.add("select-hide");
+						x[i].classList.add('select-hide');
 					}
 				}
 			}
 			/*if the user clicks anywhere outside the select box,
 			then close all select boxes:*/
-			document.addEventListener("click", closeAllSelect);
-			</script>
+			document.addEventListener('click', closeAllSelect);
+		</script>
 	</body>
 </html>
