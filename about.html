@@ -4,12 +4,52 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="response.css" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 		<title>About</title>
 	</head>
 	<body>
 		<div class="about-page">
 			<div class="about-page-wrap">
+
+				<nav role="navigation" class="navigation-mobile">
+					<div id="menuToggle">
+						<input type="checkbox" />
+						<span></span>
+						<span></span>
+						<span></span>
+						<ul id="menu">
+							<li><a href="#">О проекте</a></li>
+							<li><a href="/planning.html">Выбрать резиденцию</a></li>
+							<li><a href="/photo-gallery.html">Фотогалерея</a></li>
+							<li><a href="/contacts.html">Контакты</a></li>
+	
+								<li><a href="#">Оставить заявку</a></li>
+								<li>
+								<form class="language-picker language-picker-contact-page">
+									<select
+										name="language-picker-select"
+										id="language-picker-select"
+									>
+										<option value="eng" selected>Eng</option>
+										<option value="russ">Ру</option>
+										<option value="uzb">Uzb</option>
+									</select>
+								</form>
+							</li>
+						</ul>
+					</div>
+					<div class="mobile-logo">
+						<img
+							class="logo-transparent-mobile"
+							src="images/icons/Logo-transparent.svg"
+							alt=""
+						/>
+					</div>
+				</nav>
+
+
+
 				<div class="about-page-banner">
 					<img class="logo-yellow" src="images/icons/logo-yellow.svg" alt="" />
 					<div class="about-page-header">

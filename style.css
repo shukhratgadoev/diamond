@@ -356,6 +356,7 @@ p {
 .page-11-wrapper-map {
 	width: 73%;
 	padding-right: 20px;
+	box-sizing: border-box;
 }
 .page-11-wrapper-map-block {
 	width: 56.25rem;
@@ -366,6 +367,7 @@ p {
 	padding-left: 20px;
 	width: 27%;
 	height: 100%;
+	box-sizing: border-box;
 }
 .page-11-wrapper-desc-wrap {
 	height: 100%;
@@ -1743,6 +1745,7 @@ table tr td {
 }
 .about-page-second-block-left {
 	margin-left: 9.29%;
+	margin-right: 30px;
 }
 .about-page-second-block-left-title h2 {
 	color: var(--2F2F2F, #2f2f2f);
