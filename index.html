@@ -389,7 +389,7 @@
 		</section>
 
 		<div class="scroll-left-content-wrap">
-			<section class="page-left page-10">
+			<!-- <section class="page-left page-10">
 				<img class="logo" src="images/Logo.svg" alt="logo" />
 				<div class="page-10-wrapper">
 					<div class="page-10-wrapper-map">
@@ -442,7 +442,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 			<section class="page-left page-11">
 				<img class="logo" src="images/Logo.svg" alt="logo" />
 				<div class="page-11-wrapper">
@@ -595,7 +595,7 @@
 			gsap.registerPlugin(ScrollTrigger);
 		
 			let sectionsRight = gsap.utils.toArray('.page-right');
-			let sectionsLeft = gsap.utils.toArray('.page-left');
+			// let sectionsLeft = gsap.utils.toArray('.page-left');
 		
 			const mediaQuery = window.matchMedia('(min-width: 992px)');
 		
@@ -613,20 +613,20 @@
 					},
 				});
 		
-				gsap.set(sectionsLeft, { xPercent: -100 * (sectionsLeft.length - 1) });
+				// gsap.set(sectionsLeft, { xPercent: -100 * (sectionsLeft.length - 1) });
 		
-				gsap.to(sectionsLeft, {
-					xPercent: 0,
-					ease: 'none',
-					scrollTrigger: {
-						trigger: '.scroll-left-content-wrap',
-						pin: true,
-						scrub: true,
-						end: () =>
-							'+=' +
-							document.querySelector('.scroll-left-content-wrap').offsetWidth,
-					},
-				});
+				// gsap.to(sectionsLeft, {
+				// 	xPercent: 0,
+				// 	ease: 'none',
+				// 	scrollTrigger: {
+				// 		trigger: '.scroll-left-content-wrap',
+				// 		pin: true,
+				// 		scrub: true,
+				// 		end: () =>
+				// 			'+=' +
+				// 			document.querySelector('.scroll-left-content-wrap').offsetWidth,
+				// 	},
+				// });
 			}
 		</script>
 		
