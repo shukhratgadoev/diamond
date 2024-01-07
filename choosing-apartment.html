@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="response.css" />
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<title>Выбрать резиденцию</title>
 	</head>
 	<body style="background-color: #fefaf0">
@@ -88,7 +89,7 @@
 				<div class="choosing-apartment-page-main-block">
 					<div class="choosing-apartment-wrap">
 						<div class="choosing-apartment-title">
-							<h2>Выбор квартиры</h2>
+							<h2 data-aos="fade-right">Выбор квартиры</h2>
 						</div>
 
 						<div class="choosing-apartment-body">
@@ -455,5 +456,10 @@
 			then close all select boxes:*/
 			document.addEventListener('click', closeAllSelect);
 		</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+ AOS.init();
+</script>
 	</body>
 </html>
